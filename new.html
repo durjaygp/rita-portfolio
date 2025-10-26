@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RitaspeaksSkin - Skincare & Beauty Consultant</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'rose-gold': '#B8860B', // Muted Gold/Bronze for accent
+                        'cream': '#F8F5EE', // Soft Cream background
+                        'soft-pink-accent': '#E8A3B4', // Secondary Pink accent
+                        'slate-dark': '#3C4048', // Dark gray for text and footer
+                    },
+                    fontFamily: {
+                        'serif': ['Playfair Display', 'serif'],
+                        'sans': ['Poppins', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'soft': '0 8px 30px rgba(0, 0, 0, 0.05)',
+                        'gold-glow': '0 5px 20px rgba(184, 134, 11, 0.4)',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .rita-logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            font-weight: 700;
+            color: #B8860B; /* Rose Gold */
+        }
+        .rose-gold-text {
+            color: #B8860B;
+        }
+        .bg-rose-gold-btn {
+            background-color: #B8860B;
+            transition: all 0.3s;
+        }
+        .bg-rose-gold-btn:hover {
+            background-color: #A07409;
+            box-shadow: 0 5px 15px rgba(184, 134, 11, 0.5);
+        }
+        .menu-link:hover {
+            color: #B8860B;
+            transform: translateY(-1px);
+        }
+    </style>
+</head>
+<body class="font-sans text-slate-dark bg-white">
+
+<header class="sticky top-0 z-50 bg-white border-b border-cream shadow-soft">
+    <div class="container mx-auto px-4 md:px-8 py-4 flex justify-between items-center">
+        <a href="#" class="rita-logo">RitaspeaksSkin</a>
+
+        <nav class="hidden lg:flex space-x-8 text-sm font-medium">
+            <a href="#about" class="text-slate-dark menu-link transition duration-300">About</a>
+            <a href="#businesses" class="text-slate-dark menu-link transition duration-300">Shop</a>
+            <a href="#partnerships" class="text-slate-dark menu-link transition duration-300">Partners</a>
+            <a href="#contact" class="text-slate-dark menu-link transition duration-300">Contact</a>
+        </nav>
+
+        <div class="flex items-center space-x-4">
+            <a href="https://tr.ee/CVpm2vLpsp" target="_blank" class="hidden sm:inline-block bg-rose-gold-btn text-white font-semibold py-2 px-6 rounded-full shadow-md">
+                Book a Consult
+            </a>
+            <button id="mobile-menu-button" class="lg:hidden text-slate-dark p-2 rounded-lg hover:bg-cream transition">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+    </div>
+
+    <div id="mobile-menu" class="hidden lg:hidden bg-white shadow-lg">
+        <nav class="flex flex-col space-y-3 p-4 text-base font-medium">
+            <a href="#about" class="p-2 rounded-md hover:bg-cream hover:text-rose-gold">About</a>
+            <a href="#businesses" class="p-2 rounded-md hover:bg-cream hover:text-rose-gold">Shop</a>
+            <a href="#partnerships" class="p-2 rounded-md hover:bg-cream hover:text-rose-gold">Partners</a>
+            <a href="#contact" class="p-2 rounded-md hover:bg-cream hover:text-rose-gold">Contact</a>
+            <a href="https://tr.ee/CVpm2vLpsp" target="_blank" class="bg-rose-gold-btn text-center text-white font-semibold py-2 rounded-full mt-2">
+                Book a Consult
+            </a>
+        </nav>
+    </div>
+</header>
+
+<section id="hero" class="bg-cream pt-20 pb-16 md:pt-32 md:pb-24">
+    <div class="container mx-auto px-4 md:px-8 flex flex-col lg:flex-row items-center justify-between">
+        <div class="lg:w-1/2 mb-12 lg:mb-0 text-center lg:text-left">
+            <p class="text-xl rose-gold-text font-semibold mb-3">Welcome to RitaspeaksSkin</p>
+            <h1 class="font-serif text-5xl md:text-7xl font-bold leading-snug mb-6 text-slate-dark">
+                Skincare Expertise, Crafted with Care.
+            </h1>
+            <p class="text-xl text-gray-600 mb-8 max-w-xl mx-auto lg:mx-0">
+                A **Skincare Consultant & Content Creator** focusing on the science of healthy skin, beauty, and confidence.
+            </p>
+
+            <div class="flex flex-col sm:flex-row justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4 mb-8">
+                <a href="https://tr.ee/CVpm2vLpsp" target="_blank" class="bg-rose-gold-btn text-white font-semibold py-3 px-8 rounded-full shadow-gold-glow transition duration-300 text-center">
+                    Book a Consultation
+                </a>
+                <a href="#businesses" class="border-2 border-rose-gold text-rose-gold font-semibold py-3 px-8 rounded-full hover:bg-cream transition duration-300 text-center">
+                    Explore My Products
+                </a>
+            </div>
+
+            <div class="flex justify-center lg:justify-start space-x-6">
+                <a href="https://www.instagram.com/ritaspeaksskin/" target="_blank" class="text-2xl text-gray-500 hover:text-rose-gold transition duration-300"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@ritaspeaksskin" target="_blank" class="text-2xl text-gray-500 hover:text-rose-gold transition duration-300"><i class="fab fa-tiktok"></i></a>
+                <a href="https://www.facebook.com/RitaspeaksSkin" target="_blank" class="text-2xl text-gray-500 hover:text-rose-gold transition duration-300"><i class="fab fa-facebook-f"></i></a>
+            </div>
+        </div>
+
+        <div class="lg:w-1/2 flex justify-center relative">
+            <div class="relative w-72 h-72 md:w-96 md:h-96">
+                <div class="rounded-full overflow-hidden w-full h-full border-8 border-white shadow-soft">
+                    <img src="https://source.unsplash.com/600x600/?skincare,consultant,woman" alt="Rita's Portrait" class="w-full h-full object-cover transform scale-100 hover:scale-[1.03] transition duration-700 ease-in-out" />
+                </div>
+                <div class="absolute bottom-4 right-4 text-6xl rose-gold-text opacity-70 rotate-3 font-serif">🧴</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+---
+
+<section id="about" class="py-20 md:py-32 bg-white">
+    <div class="container mx-auto px-4 md:px-8 text-center max-w-4xl">
+        <h2 class="font-serif text-4xl md:text-5xl font-bold mb-6 text-slate-dark">
+            My Passion & Purpose
+        </h2>
+        <p class="text-lg text-gray-700 leading-relaxed mx-auto mb-10">
+            **I love creating: content, products, art, and life.** Blessed to be able to do these for a living. My goal is to educate my audience with honest, science-backed information, helping everyone on their journey to achieving their healthiest skin.
+        </p>
+
+        <div class="bg-soft-pink-accent bg-opacity-10 p-8 rounded-xl shadow-soft">
+            <h3 class="font-serif text-2xl font-bold mb-4 rose-gold-text">Need Personalized Advice?</h3>
+            <p class="text-gray-700 mb-6">Book a 1-on-1 session to get a personalized regimen for your skin concerns.</p>
+            <a href="https://tr.ee/CVpm2vLpsp" target="_blank" class="bg-rose-gold-btn text-white font-semibold py-3 px-8 rounded-full hover:bg-opacity-90 transition duration-300 inline-block">
+                Book a Consultation Today
+            </a>
+        </div>
+    </div>
+</section>
+
+---
+
+<section id="businesses" class="py-20 md:py-32 bg-cream">
+    <div class="container mx-auto px-4 md:px-8 text-center">
+        <h2 class="font-serif text-4xl md:text-5xl font-bold mb-12 text-slate-dark">
+            My Skincare Ventures
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <div class="bg-white rounded-xl shadow-soft p-6 transition duration-300 hover:shadow-lg transform hover:-translate-y-1 border-t-4 border-rose-gold">
+                <div class="text-5xl rose-gold-text mb-4">✨</div>
+                <h3 class="font-serif text-2xl font-semibold mb-2">Beyondpigment.com</h3>
+                <p class="text-gray-600 mb-4">Dedicated to products and resources for hyperpigmentation and skin tone concerns.</p>
+                <a href="https://beyondpigment.com" target="_blank" class="text-sm font-semibold rose-gold-text border-b border-rose-gold hover:opacity-80 transition duration-300">
+                    Visit the Shop &rarr;
+                </a>
+            </div>
+            <div class="bg-white rounded-xl shadow-soft p-6 transition duration-300 hover:shadow-lg transform hover:-translate-y-1 border-t-4 border-rose-gold">
+                <div class="text-5xl rose-gold-text mb-4">🌿</div>
+                <h3 class="font-serif text-2xl font-semibold mb-2">Rsskincare.com</h3>
+                <p class="text-gray-600 mb-4">My core line of effective and carefully formulated daily skincare essentials.</p>
+                <a href="https://rsskincare.com" target="_blank" class="text-sm font-semibold rose-gold-text border-b border-rose-gold hover:opacity-80 transition duration-300">
+                    Discover Products &rarr;
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+---
+
+<section id="partnerships" class="py-20 md:py-32 bg-white">
+    <div class="container mx-auto px-4 md:px-8 text-center">
+        <h2 class="font-serif text-4xl md:text-5xl font-bold mb-12 text-slate-dark">
+            Trusted Partnerships
+        </h2>
+        <p class="text-lg text-gray-700 mb-10 max-w-3xl mx-auto">
+            I am proud to collaborate with and promote brands that align with my values of efficacy, transparency, and ingredient integrity.
+        </p>
+
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center max-w-6xl mx-auto">
+            <div class="p-4 bg-cream rounded-lg shadow-inner opacity-70 hover:opacity-100 transition duration-300"><p class="font-bold text-lg rose-gold-text">Google</p></div>
+            <div class="p-4 bg-cream rounded-lg shadow-inner opacity-70 hover:opacity-100 transition duration-300"><p class="font-bold text-lg rose-gold-text">L'Oréal</p></div>
+            <div class="p-4 bg-cream rounded-lg shadow-inner opacity-70 hover:opacity-100 transition duration-300"><p class="font-bold text-lg rose-gold-text">TikTok</p></div>
+            <div class="p-4 bg-cream rounded-lg shadow-inner opacity-70 hover:opacity-100 transition duration-300"><p class="font-bold text-lg rose-gold-text">Dermalogica</p></div>
+            <div class="p-4 bg-cream rounded-lg shadow-inner opacity-70 hover:opacity-100 transition duration-300"><p class="font-bold text-lg rose-gold-text">Vichy</p></div>
+            <div class="p-4 bg-cream rounded-lg shadow-inner opacity-70 hover:opacity-100 transition duration-300"><p class="font-bold text-lg rose-gold-text">Anua</p></div>
+            <div class="p-4 bg-cream rounded-lg shadow-inner opacity-70 hover:opacity-100 transition duration-300"><p class="font-bold text-lg rose-gold-text">Apostrophe</p></div>
+            <div class="p-4 bg-cream rounded-lg shadow-inner opacity-70 hover:opacity-100 transition duration-300"><p class="font-bold text-lg rose-gold-text">Costco</p></div>
+            <div class="p-4 bg-cream rounded-lg shadow-inner opacity-70 hover:opacity-100 transition duration-300"><p class="font-bold text-lg rose-gold-text">Cetaphil</p></div>
+            <div class="p-4 bg-cream rounded-lg shadow-inner opacity-70 hover:opacity-100 transition duration-300"><p class="font-bold text-lg rose-gold-text">Versed</p></div>
+            <div class="p-4 bg-cream rounded-lg shadow-inner opacity-70 hover:opacity-100 transition duration-300"><p class="font-bold text-lg rose-gold-text">Curology</p></div>
+            <div class="p-4 bg-cream rounded-lg shadow-inner opacity-70 hover:opacity-100 transition duration-300"><p class="font-bold text-lg rose-gold-text">Inkey List</p></div>
+        </div>
+        <p class="mt-8 text-gray-500">...and many more aligned brands.</p>
+    </div>
+</section>
+
+---
+
+<section id="contact" class="py-20 md:py-32 bg-cream">
+    <div class="container mx-auto px-4 md:px-8 text-center max-w-2xl">
+        <h2 class="font-serif text-4xl md:text-5xl font-bold mb-6 text-slate-dark">
+            Business Contact
+        </h2>
+        <p class="text-lg text-gray-700 mb-8">
+            For all business inquiries, partnerships, press, and brand collaborations, please reach out via email.
+        </p>
+
+        <div class="bg-white p-6 rounded-xl shadow-soft border-l-4 border-rose-gold">
+            <p class="font-serif text-2xl font-bold mb-2 rose-gold-text">Email:</p>
+            <a href="mailto:ifeperita@gmail.com" class="text-xl text-slate-dark hover:text-rose-gold transition duration-300 font-medium">
+                ifeperita@gmail.com
+            </a>
+        </div>
+    </div>
+</section>
+
+---
+
+<footer class="bg-slate-dark text-white py-12">
+    <div class="container mx-auto px-4 md:px-8">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 border-b border-gray-700 pb-8 mb-8">
+            <div class="col-span-2 md:col-span-1">
+                <a href="#" class="rita-logo text-white hover:text-rose-gold">RitaspeaksSkin</a>
+                <p class="text-sm text-gray-400 mt-2">Skincare Consultant & Creator</p>
+            </div>
+
+            <div>
+                <h4 class="font-semibold mb-3 text-soft-pink-accent">Quick Links</h4>
+                <ul class="space-y-2 text-sm text-gray-400">
+                    <li><a href="#about" class="hover:text-rose-gold transition duration-300">About Rita</a></li>
+                    <li><a href="#partnerships" class="hover:text-rose-gold transition duration-300">Partnerships</a></li>
+                    <li><a href="https://tr.ee/CVpm2vLpsp" class="hover:text-rose-gold transition duration-300">Consultation</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-semibold mb-3 text-soft-pink-accent">Shop</h4>
+                <ul class="space-y-2 text-sm text-gray-400">
+                    <li><a href="https://beyondpigment.com" target="_blank" class="hover:text-rose-gold transition duration-300">Beyond Pigment</a></li>
+                    <li><a href="https://rsskincare.com" target="_blank" class="hover:text-rose-gold transition duration-300">RS Skincare</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-semibold mb-3 text-soft-pink-accent">Connect</h4>
+                <div class="flex space-x-4">
+                    <a href="https://www.instagram.com/ritaspeaksskin/" target="_blank" class="text-xl text-gray-400 hover:text-rose-gold transition duration-300"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@ritaspeaksskin" target="_blank" class="text-xl text-gray-400 hover:text-rose-gold transition duration-300"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://www.facebook.com/RitaspeaksSkin" target="_blank" class="text-xl text-gray-400 hover:text-rose-gold transition duration-300"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center text-sm text-gray-500 pt-4">
+            ©2025 RitaspeaksSkin. All rights reserved.
+        </div>
+    </div>
+</footer>
+
+<script>
+    document.getElementById('mobile-menu-button').onclick = function() {
+        document.getElementById('mobile-menu').classList.toggle('hidden');
+    };
+    
+    document.querySelectorAll('#mobile-menu a').forEach(item => {
+        item.addEventListener('click', () => {
+            document.getElementById('mobile-menu').classList.add('hidden');
+        });
+    });
+</script>
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
